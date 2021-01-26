@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -154,5 +155,20 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "State of Main Activity Changed from v to onRestart()", Toast.LENGTH_SHORT).show();
         Log.d(MainActivity.class.getSimpleName(),"State of Main Activity Changed from v to onRestart()");
 
+    }
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        final TextView text = (TextView)findViewById(R.id.re);
+        CharSequence t2 = text.getText();
+        outState.putCharSequence("Text", t2);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        final TextView text = (TextView)findViewById(R.id.re);
+        CharSequence t2 = savedInstanceState.getCharSequence("Text");
+        text.setText(t2);
     }
 }

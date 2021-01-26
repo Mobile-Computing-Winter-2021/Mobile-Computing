@@ -1,5 +1,6 @@
 package com.example.helloworld;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -103,4 +104,5 @@ public class Activity2 extends AppCompatActivity {
         Log.d(Activity2.class.getSimpleName(),"State of Activity2 Changed from v to onRestart()");
 
     }
+
 }
