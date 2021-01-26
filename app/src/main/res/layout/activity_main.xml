@@ -1,18 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <TextView
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/greeting_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="350dp"
+            android:layout_height="59dp"
+            android:hint="@string/please_enter_his_her_name"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="117dp"
+            android:text="@string/wearing_a_mask_when_outside"
+            android:textSize="21sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox1"
+            android:layout_marginTop="18dp"
+            android:text="@string/washing_hands_frequently"
+            android:textSize="21sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox2"
+            android:layout_marginTop="23dp"
+            android:text="@string/maintaining_2_feet_distance"
+            android:textSize="21sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox2"
+            android:layout_marginTop="100dp"
+            android:text="@string/covering_nose_and_mouth_while_sneezing_and_coughing"
+            android:textSize="21sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox2"
+            android:layout_marginTop="174dp"
+            android:text="@string/taking_health_diets"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/re"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checkBox5"
+            android:layout_marginTop="55dp"
+            android:text="@string/check_safe_or_not_safe"
+            android:gravity="center"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re"
+            android:layout_marginTop="50dp"
+            android:text="@string/clear"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="52dp"
+            android:layout_toEndOf="@id/clear"
+            android:text="@string/submit"
+            android:textSize="21sp" />
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">HelloWorld</string>
-    <string name="greeting_text">Hello World! "From Name" </string>
+    <string name="check">Check</string>
+    <string name="please_enter_his_her_name">Please enter his/her name</string>
+    <string name="wearing_a_mask_when_outside">wearing a mask when outside</string>
+    <string name="washing_hands_frequently">Washing Hands Frequently</string>
+    <string name="maintaining_2_feet_distance">maintaining 2 feet distance</string>
+    <string name="covering_nose_and_mouth_while_sneezing_and_coughing">covering nose and mouth while sneezing and coughing</string>
+    <string name="taking_health_diets">taking health diets</string>
+    <string name="clear">clear</string>
+    <string name="submit">submit</string>
+    <string name="taken_precautions_are">Taken Precautions are:</string>
+    <string name="check_safety">Check Safety</string>
+    <string name="safe_or_not_safe">safe or not safe</string>
+    <string name="check_safe_or_not_safe">check safe or not safe</string>
+    <string name="back">back</string>
+
 </resources>
