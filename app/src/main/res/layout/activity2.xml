@@ -9,10 +9,12 @@
     tools:context=".MainActivity">
     <fragment
         android:id="@+id/fragment1"
-        android:name="com.example.music_player_a2.fragment1"
+        android:name="com.example.music_player_a2.fragment2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"/>
+
+
 
 
 </LinearLayout>

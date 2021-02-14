@@ -1,4 +1,14 @@
 <resources>
-    <string name="app_name">HelloWorld</string>
-    <string name="greeting_text">Hello World! "From Name" </string>
+    <string name="app_name">Music_player_A2</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="new_activity">new_activity</string>
+    <string name="to_the_new_activity" />
+    <string name="welcome">Welcome!!</string>
+    <string name="Go_to_New_Activity">Go to new activity</string>
+    <string name="download_the_songs">Download the songs</string>
+    <string name="Download">Download</string>
+    <string name="New_activity">New Activity</string>
+    <string name="perform_download_operation">Perform Download Operation</string>
+    <string name="Play_Downloaded_song">Play Downloaded Song</string>
 </resources>
