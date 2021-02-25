@@ -1,4 +1,13 @@
 <resources>
-    <string name="app_name">HelloWorld</string>
-    <string name="greeting_text">Hello World! "From Name" </string>
+    <string name="app_name">std details</string>
+    <string name="show_students_list">show students details</string>
+    <string name="student_name">student name</string>
+    <string name="Hello">Hello</string>
+    <string name="name">name</string>
+    <string name="department">department</string>
+    <string name="email">email</string>
+    <string name="edit_details">EDIT DETAILS</string>
+    <string name="update_details">update details</string>
+    <string name="show_update_details">show updated details</string>
+    <string name="back">back</string>
 </resources>
