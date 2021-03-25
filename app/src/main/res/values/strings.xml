@@ -1,4 +1,12 @@
 <resources>
-    <string name="app_name">HelloWorld</string>
-    <string name="greeting_text">Hello World! "From Name" </string>
+    <string name="app_name">A4_Sensors</string>
+    <string name="accelerometer">Accelerometer</string>
+    <string name="linear_accelerator">Linear Accelerator</string>
+    <string name="temperature">Temperature</string>
+    <string name="light">Light</string>
+    <string name="gps">GPS</string>
+    <string name="proximity">Proximity</string>
+    <string name="acc_average">Acc Average</string>
+    <string name="light_average">Light Average</string>
+    <string name="detect_motion">Detect Motion</string>
 </resources>
