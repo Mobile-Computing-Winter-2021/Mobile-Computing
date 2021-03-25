@@ -448,7 +448,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         if (tempswitch.isChecked()) {
             if (event.sensor.getType() == Sensor.TYPE_GYROSCOPE) {
-                temp.setText(" " + event.values[0]+ " "+ event.values[1]+ " "+ event.values[2]);
+                temp.setText(" " + event.values[0]+ " \n"
+                        + event.values[1]+ " \n"
+                        + event.values[2]);
 
                 Temperature temperature = new Temperature();
                 // light.setLight_value("" + lig.getText());
