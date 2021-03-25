@@ -294,6 +294,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 long time = System.currentTimeMillis() / 60000;
                 for (int i = 0; i < list.size() && (time-list.get(i).getTime() <= 60); i++) {
                     //comparing less than 60mins i.e. 1hr
+                    if(time-list.get(i).getTime()>60){
+                        break;
+                    }
 
                         xsum += list.get(i).getX_acc();
                         ysum += list.get(i).getY_acc();
@@ -322,8 +325,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 List<com.example.a4_sensors.Light> list = dao6.getAllLightValue();
                 long time = System.currentTimeMillis() / 60000;
                 for (int i = 0; i < list.size() && (time-list.get(i).getTime() <= 60); i++) {
+                    if(time-list.get(i).getTime()>60){
+                        break;
+                    }
 
-                        lightsum += list.get(i).getLight_value();
+                    lightsum += list.get(i).getLight_value();
 
                         counter_light += 1;
 
