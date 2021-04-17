@@ -4,15 +4,113 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <ListView
+        android:id="@+id/listofwifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scanwifi"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/scanwifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:backgroundTint="#DBDFDF"
+        android:text="@string/wifi_scan"
+        android:textColor="#272626"
+        app:layout_constraintBottom_toTopOf="@+id/roomno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#6D7070"
+        app:strokeWidth="1dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/roomno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:backgroundTint="#DEE3E3"
+        android:textColor="#272626"
+        app:strokeColor="#7B7E7E"
+        app:strokeWidth="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/testview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/showrssi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/greeting_text"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#DEE3E3"
+        android:gravity="bottom"
+        android:text="Show RSSI"
+        android:textColor="#272626"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/collectdata"
+        app:strokeColor="#7B7E7E"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/collectdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="60dp"
+
+        android:backgroundTint="#CDD5D5"
+        android:gravity="bottom"
+        android:text="Collect data"
+        android:textColor="#272626"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/test"
+        app:strokeColor="#7B7C7C"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#CDD5D5"
+        android:gravity="bottom"
+
+        android:text="test"
+        android:textColor="#272626"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#7B7C7C"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/testview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="Show romm no."
+        app:strokeColor="#7B7E7E"
+        android:backgroundTint="#CDD5D5"
+        app:strokeWidth="1dp"
+        android:textColor="#272626"
+        app:layout_constraintBottom_toTopOf="@+id/collectdata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
