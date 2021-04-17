@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment5">
-        <activity android:name=".Plot"></activity>
+        <activity android:name=".TestKnn"></activity>
+        <activity android:name=".Plot" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
