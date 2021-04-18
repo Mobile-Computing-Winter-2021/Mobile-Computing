@@ -1,6 +1,13 @@
 package com.example.assignment5;
 
+<<<<<<< HEAD
 import android.content.Context;
+=======
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
+import android.content.Intent;
+>>>>>>> origin/Assignment5
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -12,8 +19,11 @@ import android.widget.Button;
 import android.widget.Switch;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatActivity;
 
+=======
+>>>>>>> origin/Assignment5
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -25,7 +35,11 @@ public class IMULocalization extends AppCompatActivity implements SensorEventLis
     Button collect,locate;
     TextView result;
 
+<<<<<<< HEAD
     List<IMUData> imuDataList=new ArrayList<>();
+=======
+    List<com.example.assignment5.IMUData> imuDataList=new ArrayList<>();
+>>>>>>> origin/Assignment5
     private SensorManager sensorManager;
 
     Sensor accelerometer, gyroscope,magnetometer,stepcounter,stepdetector;
@@ -124,6 +138,7 @@ public class IMULocalization extends AppCompatActivity implements SensorEventLis
                 imuData.setZ_mag(zmag);
 
                 imuData.setSpeed(speed);
+<<<<<<< HEAD
 
                 int val= (int) (2-xacc);
 
@@ -134,6 +149,9 @@ public class IMULocalization extends AppCompatActivity implements SensorEventLis
 //                    imuData.setDirection("RIGHT");
 //                }
 
+=======
+                imuData.setDirection("NA");
+>>>>>>> origin/Assignment5
 
                 imuData.setStepcount(step_count);
                 if(step_count<10.0){
@@ -143,7 +161,11 @@ public class IMULocalization extends AppCompatActivity implements SensorEventLis
                     imuData.setRoom_no(2);
                 }
                 else if(step_count>=30.0 && step_count< 50.0){
+<<<<<<< HEAD
                     imuData.setRoom_no(3);
+=======
+                    imuData.setRoom_no(2);
+>>>>>>> origin/Assignment5
                 }
 
                 else {
