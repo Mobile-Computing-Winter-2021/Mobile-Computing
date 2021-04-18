@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
+    android:background="#F6DAC6"
     android:orientation="vertical"
-    tools:context=".MainActivity"
 
-    android:background="#F6DAC6">
+    tools:context=".MainActivity">
 
 
     <ListView
@@ -53,8 +53,8 @@
             android:layout_height="0dp"
             android:layout_marginEnd="24dp"
             android:backgroundTint="#E9EDED"
-            android:text="@string/wifi_scan"
             android:gravity="center"
+            android:text="@string/wifi_scan"
             android:textColor="#272626"
             app:layout_constraintBottom_toBottomOf="@+id/showrssi"
             app:layout_constraintEnd_toStartOf="@+id/showrssi"
@@ -103,8 +103,8 @@
             android:layout_marginStart="24dp"
             android:layout_marginBottom="4dp"
             android:backgroundTint="#E9EDED"
-            android:text="Enter Room No"
             android:gravity="center"
+            android:text="Enter Room No"
             android:textColor="#121010"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -193,13 +193,29 @@
         android:layout_height="49dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#E9EDED"
+        android:gravity="center"
         android:text="Test for KNN"
         android:textAlignment="center"
         android:textColor="#121010"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toEndOf="@+id/buttonindoorloc"
+        app:strokeColor="#7B7E7E"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/buttonindoorloc"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E9EDED"
+        android:gravity="center"
+        android:text="IMU Localization"
+        android:textAlignment="center"
+        android:textColor="#121010"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:strokeColor="#7B7E7E"
         app:strokeWidth="1dp" />
