@@ -7,7 +7,8 @@
     android:layout_margin="16dp"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="#F1E5DC">
+
+    android:background="#F6DAC6">
 
 
     <ListView
@@ -53,6 +54,7 @@
             android:layout_marginEnd="24dp"
             android:backgroundTint="#E9EDED"
             android:text="@string/wifi_scan"
+            android:gravity="center"
             android:textColor="#272626"
             app:layout_constraintBottom_toBottomOf="@+id/showrssi"
             app:layout_constraintEnd_toStartOf="@+id/showrssi"
@@ -69,7 +71,8 @@
             android:layout_marginStart="208dp"
             android:layout_marginTop="412dp"
             android:backgroundTint="#E9EDED"
-            android:gravity="bottom"
+
+            android:gravity="center"
             android:text="Show RSSI"
             android:textColor="#272626"
             app:layout_constraintStart_toStartOf="parent"
@@ -101,6 +104,7 @@
             android:layout_marginBottom="4dp"
             android:backgroundTint="#E9EDED"
             android:text="Enter Room No"
+            android:gravity="center"
             android:textColor="#121010"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -116,7 +120,7 @@
             android:layout_marginStart="36dp"
             android:layout_marginBottom="4dp"
             android:backgroundTint="#E9EDED"
-            android:gravity="bottom"
+            android:gravity="center"
             android:text="Collect data"
             android:textColor="#272626"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -149,7 +153,7 @@
             android:layout_marginStart="56dp"
 
             android:backgroundTint="#E9EDED"
-            android:gravity="bottom"
+            android:gravity="center"
             android:text="test"
             android:textColor="#272626"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -192,7 +196,7 @@
         android:text="Test for KNN"
         android:textAlignment="center"
         android:textColor="#121010"
-
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.932"

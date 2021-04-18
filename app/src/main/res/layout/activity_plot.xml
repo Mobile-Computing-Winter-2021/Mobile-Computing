@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Plot"
-    android:background="#F1E5DC">
+    android:background="@drawable/img4">
 
     <!--Ui component for our bar chart-->
     <com.github.mikephil.charting.charts.BarChart
