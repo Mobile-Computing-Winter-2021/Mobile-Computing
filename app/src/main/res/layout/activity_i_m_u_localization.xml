@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6DAC6"
+    tools:context=".IMULocalization">
+
+    <TextView
+        android:id="@+id/showtest"
+        android:layout_width="215dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#E9EDED"
+        android:gravity="center"
+        android:text="Room Number is:"
+        android:textAlignment="center"
+        android:textColor="#DF0909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cdata"
+        app:strokeColor="#7B7E7E"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/TestRoom"
+        android:layout_width="168dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#E9EDED"
+        android:gravity="center"
+        android:text="Test Room"
+        android:textColor="#272626"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showtest"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="#6D7070"
+        app:strokeWidth="1dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="168dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="112dp"
+        android:background="#E9EDED"
+        android:gravity="center"
+        android:text="Scan data"
+        android:textColor="#272626"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#6D7070"
+        app:strokeWidth="1dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/cdata"
+        android:layout_width="168dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#E9EDED"
+        android:gravity="center"
+        android:text="Collect Data"
+        android:textColor="#272626"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        app:strokeColor="#6D7070"
+        app:strokeWidth="1dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

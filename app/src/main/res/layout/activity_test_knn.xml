@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestKnn"
+    android:gravity="center"
+    android:background="#F6DAC6"
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="203dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:background="#EAF1F1"
+        android:backgroundTint="#E9EDED"
+        android:text="Enter the value of K"
+        android:textAlignment="center"
+        android:textColor="#272626"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:strokeColor="#7B7E7E"
+        app:strokeWidth="1dp" />
+
+    <EditText
+        android:id="@+id/editTextTextk"
+        android:layout_width="203dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="36dp"
+        android:background="#EAF1F1"
+
+        android:backgroundTint="#E9EDED"
+        android:textAlignment="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#272626"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#7B7E7E"
+        app:strokeWidth="1dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="215dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:backgroundTint="#E9EDED"
+        android:text="Room Number is:"
+        android:textAlignment="center"
+        android:textColor="#DF0909"
+        app:layout_constraintBottom_toTopOf="@+id/buttontestknn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#7B7E7E"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/buttontestknn"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginBottom="284dp"
+        android:backgroundTint="#E9EDED"
+        android:text="Test"
+        android:gravity="center"
+        android:textColor="#272626"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#7B7E7E"
+        app:strokeWidth="1dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
