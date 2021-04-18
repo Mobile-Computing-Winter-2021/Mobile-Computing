@@ -16,6 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment5">
         <activity android:name=".TestKnn"></activity>
+        <activity android:name=".IMULocalization"></activity>
         <activity android:name=".Plot" />
         <activity android:name=".MainActivity">
             <intent-filter>
